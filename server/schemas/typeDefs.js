@@ -33,7 +33,7 @@ const typeDefs = gql`
     }
 
     type Query {
-        loggedInUser(username: String, _id: ID): User
+        user(username: String, _id: ID): User
         loggedInUser: User
     }
 

@@ -27,11 +27,11 @@ const resolvers = {
     },
 
     Mutation: {
-        addUser: async (parent, args, context) => {
+        createUser: async (parent, args, context) => {
             const user = await User.create({...args });
 
             if (!user) {
-                throw new Error('error with addUser mutation');
+                throw new Error('error wit create mutation');
             };
             const token = signToken(user);
             return { token, user };
