@@ -8,7 +8,7 @@ const resolvers = {
         user: async (parent, { username, _id  }, context) => {
             try {
                 return await User.findOne({
-                    $or: [{ _id: _id }, { username }],
+                    $or: [{ _id }, { username }],
                 });
             } catch (error) {
                 throw new Error(error);
@@ -66,7 +66,6 @@ const resolvers = {
                 throw new Error(err);
             };
         },
-        // remove a book from `savedBooks`
         removeBook: async (parent, { bookId }, context) => {
             try {
                 if (context.user) {

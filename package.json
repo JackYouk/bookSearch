@@ -16,6 +16,8 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
-    "apollo-server-express": "^3.10.2"
+    "apollo-server-express": "^3.10.2",
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.3"
   }
 }
