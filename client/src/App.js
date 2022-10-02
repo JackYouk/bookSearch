@@ -4,6 +4,8 @@ import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 
+import {setContext} from 'react';
+
 // Apollo GraphQl imports
 import {
   ApolloClient,
